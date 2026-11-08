@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Background -->
+  <rect width="64" height="64" rx="12" fill="#0f0f0f"/>
+  <!-- Accent frame -->
+  <rect x="4" y="4" width="56" height="56" rx="9" fill="none" stroke="#e0c8ff" stroke-width="2.5"/>
+  <!-- "P" monogram (swap for your initials) -->
+  <text x="32" y="44" text-anchor="middle"
+        font-family="Georgia, 'Times New Roman', serif"
+        font-size="36" font-weight="700"
+        fill="#e0c8ff">P</text>
+</svg>   

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project Detail — Your Name</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       SIDE NAVIGATION (same as index.html)
+       ============================================================ -->
+  <nav class="side-nav" id="sideNav">
+    <div class="side-nav__logo"><span class="logo-text">YN</span></div>
+    <ul class="side-nav__links">
+      <li><a href="index.html#hero">Home</a></li>
+      <li><a href="index.html#work">Work</a></li>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+    <div class="side-nav__social">
+      <a href="https://twitter.com/yourhandle" target="_blank" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+      <a href="https://instagram.com/yourhandle" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://dribbble.com/yourhandle" target="_blank" aria-label="Dribbble"><i class="fab fa-dribbble"></i></a>
+      <a href="https://behance.net/yourhandle" target="_blank" aria-label="Behance"><i class="fab fa-behance"></i></a>
+      <a href="https://linkedin.com/in/yourhandle" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://github.com/yourhandle" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+    </div>
+  </nav>
+
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="nav-overlay" id="navOverlay"></div>
+
+  <!-- ============================================================
+       PROJECT DETAIL (populated by JS from data/work.json)
+       ============================================================ -->
+  <main class="detail" id="detail">
+    <a href="index.html#work" class="detail__back">
+      <i class="fas fa-arrow-left"></i> Back to Work
+    </a>
+
+    <div class="detail__content" id="detailContent">
+      <!-- Populated by JS -->
+      <p class="detail__loading">Loading project…</p>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <p>&copy; 2026 Your Name. All rights reserved.</p>
+      <div class="footer__social">
+        <a href="https://linkedin.com/in/yourhandle" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/yourhandle" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://dribbble.com/yourhandle" target="_blank" aria-label="Dribbble"><i class="fab fa-dribbble"></i></a>
+        <a href="https://behance.net/yourhandle" target="_blank" aria-label="Behance"><i class="fab fa-behance"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>   

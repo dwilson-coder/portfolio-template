@@ -1,0 +1,74 @@
+[
+  {
+    "id": "brand-identity",
+    "title": "Brand Identity System",
+    "type": "UI Design",
+    "description": "Complete visual identity for a fintech startup.",
+    "fullDescription": "Designed a full brand identity system including logo, color palette, typography, and component library for a Series-A fintech startup. Delivered Figma files, brand guidelines PDF, and a reusable design system.",
+    "image": "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=1200&q=80",
+    "tags": ["Branding", "Figma", "Design System"],
+    "year": "2025",
+    "client": "Acme Corp",
+    "link": "https://example.com"
+  },
+  {
+    "id": "ecommerce-redesign",
+    "title": "E-Commerce Redesign",
+    "type": "Website",
+    "description": "Full UX overhaul of a 50K-SKU retail store.",
+    "fullDescription": "Led the UX and visual redesign of a high-volume e-commerce platform. Improved conversion by 23% through simplified navigation, faster load times, and a new product-detail layout. Shipped in 12 weeks.",
+    "image": "https://images.unsplash.com/photo-1550684848-fac1c5b4e853?w=1200&q=80",
+    "tags": ["UX", "E-Commerce", "A/B Testing"],
+    "year": "2025",
+    "client": "ShopCo",
+    "link": "https://example.com"
+  },
+  {
+    "id": "mobile-app-ui",
+    "title": "Fitness Tracker App",
+    "type": "Mobile UI",
+    "description": "iOS & Android UI for a habit-tracking app.",
+    "fullDescription": "Designed the complete UI for a cross-platform fitness and habit-tracking application. Created 40+ screens, a dark/light theme system, and micro-interaction specs. App launched to 50K+ downloads in the first month.",
+    "image": "https://images.unsplash.com/photo-1558591710-4b4a1ae0f04d?w=1200&q=80",
+    "tags": ["Mobile", "iOS", "Android", "Prototyping"],
+    "year": "2024",
+    "client": "FitLoop",
+    "link": "https://example.com"
+  },
+  {
+    "id": "landing-page",
+    "title": "SaaS Landing Page",
+    "type": "Website",
+    "description": "High-converting landing page for a B2B SaaS product.",
+    "fullDescription": "Built a conversion-optimized landing page for a B2B analytics SaaS. A/B tested 4 hero variants, implemented scroll-triggered animations, and achieved a 34% email capture rate.",
+    "image": "https://images.unsplash.com/photo-1541701494587-cb58502866ab?w=1200&q=80",
+    "tags": ["Landing Page", "Copywriting", "Animation"],
+    "year": "2024",
+    "client": "DataPulse",
+    "link": "https://example.com"
+  },
+  {
+    "id": "dashboard-ui",
+    "title": "Analytics Dashboard",
+    "type": "UI Design",
+    "description": "Data-dense dashboard for real-time metrics.",
+    "fullDescription": "Designed a real-time analytics dashboard with 12+ widget types, dark mode, and responsive breakpoints. Worked closely with the engineering team to ensure pixel-perfect implementation in React.",
+    "image": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=1200&q=80",
+    "tags": ["Dashboard", "Data Viz", "React"],
+    "year": "2024",
+    "client": "MetricFlow",
+    "link": "https://example.com"
+  },
+  {
+    "id": "illustration-pack",
+    "title": "Illustration Pack",
+    "type": "Illustration",
+    "description": "Custom illustration set for a tech blog.",
+    "fullDescription": "Created a pack of 24 custom spot illustrations for a technology blog's editorial content. Style: flat, geometric, with a limited 4-color palette. Used across 200+ articles.",
+    "image": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&q=80",
+    "tags": ["Illustration", "Editorial", "Vector"],
+    "year": "2023",
+    "client": "TechBlog",
+    "link": "https://example.com"
+  }
+]   

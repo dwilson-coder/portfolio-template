@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name — Portfolio</title>
+  <!-- ============================================================
+       SEO & OPEN GRAPH
+       EDIT: Replace all placeholder values with your own info
+       ============================================================ -->
+
+  <!-- Primary Meta -->
+  <meta name="description" content="Portfolio of Your Name — Visual Artist & Designer specializing in UI design, branding, and illustration." />
+  <meta name="author" content="Your Name" />
+  <meta name="keywords" content="portfolio, ui design, branding, illustration, designer" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://yourdomain.com/" />
+
+  <!-- Open Graph (Facebook, LinkedIn, etc.) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://yourdomain.com/" />
+  <meta property="og:title" content="Your Name — Portfolio" />
+  <meta property="og:description" content="Visual Artist & Designer specializing in UI design, branding, and illustration." />
+  <meta property="og:image" content="https://yourdomain.com/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:site_name" content="Your Name Portfolio" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:url" content="https://yourdomain.com/" />
+  <meta name="twitter:title" content="Your Name — Portfolio" />
+  <meta name="twitter:description" content="Visual Artist & Designer specializing in UI design, branding, and illustration." />
+  <meta name="twitter:image" content="https://yourdomain.com/og-image.jpg" />
+  <meta name="twitter:creator" content="@yourhandle" />
+
+  <!-- Social Media Profile Links (for platform verification) -->
+  <link rel="me" href="https://twitter.com/yourhandle" />
+  <link rel="me" href="https://linkedin.com/in/yourhandle" />
+  <link rel="me" href="https://github.com/yourhandle" />
+  <link rel="me" href="https://dribbble.com/yourhandle" />
+  <link rel="me" href="https://behance.net/yourhandle" />
+  <link rel="me" href="https://instagram.com/yourhandle" />   
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome (social + UI icons) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Local CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+
+    <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="apple-touch-icon" href="/favicon.svg" />   
+  
+</head>
+<body>
+
+  <!-- ============================================================
+       SIDE NAVIGATION PANEL
+       EDIT: Replace social media URLs with your own profiles
+       ============================================================ -->
+  <nav class="side-nav" id="sideNav">
+    <div class="side-nav__logo">
+      <!-- EDIT: Replace with your logo or initials -->
+      <span class="logo-text">YN</span>
+    </div>
+
+    <ul class="side-nav__links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <div class="side-nav__social">
+      <!-- EDIT: Replace href with your actual social media URLs -->
+      <a href="https://twitter.com/yourhandle" target="_blank" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+      <a href="https://instagram.com/yourhandle" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      <a href="https://dribbble.com/yourhandle" target="_blank" aria-label="Dribbble"><i class="fab fa-dribbble"></i></a>
+      <a href="https://behance.net/yourhandle" target="_blank" aria-label="Behance"><i class="fab fa-behance"></i></a>
+      <a href="https://linkedin.com/in/yourhandle" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://github.com/yourhandle" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+    </div>
+  </nav>
+
+  <!-- Hamburger toggle (mobile) -->
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+
+  <!-- Overlay for mobile nav -->
+  <div class="nav-overlay" id="navOverlay"></div>
+
+  <!-- ============================================================
+       HERO SECTION
+       EDIT: Replace image, name, and tagline
+       ============================================================ -->
+  <section class="hero" id="hero">
+    <!-- EDIT: Replace with your hero image -->
+    <img
+      src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1920&q=80"
+      alt="Hero background"
+      class="hero__bg"
+    />
+    <div class="hero__overlay"></div>
+    <div class="hero__content">
+      <!-- EDIT: Your name -->
+      <h1 class="hero__name">Your Name</h1>
+      <!-- EDIT: Your tagline / profession -->
+      <p class="hero__tagline">Visual Artist &amp; Designer</p>
+      <a href="#work" class="hero__cta">View Work</a>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PORTFOLIO / WORK GALLERY
+       This section is populated dynamically from data/work.json
+       by script.js. To add/remove/edit projects, edit the JSON file.
+       ============================================================ -->
+  <section class="work" id="work">
+    <h2 class="section-title">Selected Work</h2>
+    <div class="work__grid" id="workGrid">
+      <!-- Cards injected by JS from data/work.json -->
+    </div>
+  </section>
+
+  <!-- ============================================================
+       ABOUT SECTION
+       EDIT: Replace bio text, portrait image, tags, and social links
+       ============================================================ -->
+  <section class="about" id="about">
+    <div class="about__inner">
+      <!-- EDIT: Replace with your portrait -->
+      <img
+        src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80"
+        alt="Your portrait"
+        class="about__photo"
+      />
+      <div class="about__text">
+        <h2 class="section-title">About Me</h2>
+        <!-- EDIT: Write your bio here -->
+        <p>
+          I'm a creative professional based in Your City. I specialize in
+          design, illustration, and visual storytelling. With over X years of
+          experience, I bring a unique perspective to every project.
+        </p>
+        <p>
+          When I'm not working, you'll find me exploring nature, experimenting
+          with new mediums, or collaborating with fellow creatives.
+        </p>
+
+        <!-- EDIT: Replace with your actual skills / tags -->
+        <div class="about__tags">
+          <span class="tag">UI Design</span>
+          <span class="tag">Branding</span>
+          <span class="tag">Illustration</span>
+          <span class="tag">Figma</span>
+          <span class="tag">Prototyping</span>
+          <span class="tag">Design Systems</span>
+        </div>
+
+        <!-- EDIT: Replace with your actual social media URLs -->
+        <div class="about__social">
+          <a href="https://linkedin.com/in/yourhandle" target="_blank" aria-label="LinkedIn">
+            <i class="fab fa-linkedin-in"></i> LinkedIn
+          </a>
+          <a href="https://github.com/yourhandle" target="_blank" aria-label="GitHub">
+            <i class="fab fa-github"></i> GitHub
+          </a>
+          <a href="https://dribbble.com/yourhandle" target="_blank" aria-label="Dribbble">
+            <i class="fab fa-dribbble"></i> Dribbble
+          </a>
+          <a href="https://behance.net/yourhandle" target="_blank" aria-label="Behance">
+            <i class="fab fa-behance"></i> Behance
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CONTACT SECTION
+       EDIT: Replace the public email shown to visitors
+       (The receiving email is set in js/script.js → CONTACT_EMAIL)
+       ============================================================ -->
+  <section class="contact" id="contact">
+    <h2 class="section-title">Get In Touch</h2>
+    <p class="contact__note">
+      <!-- EDIT: Your public email (shown to visitors) -->
+      <a href="mailto:hello@yourdomain.com">hello@yourdomain.com</a>
+    </p>
+
+    <form class="contact__form" id="contactForm" novalidate>
+      <div class="form-group">
+        <label for="formName">Name</label>
+        <input type="text" id="formName" name="name" placeholder="Your full name" required minlength="2" maxlength="100" autocomplete="name" />
+        <span class="form-error" data-error-for="formName"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="formEmail">Your Email</label>
+        <input type="email" id="formEmail" name="email" placeholder="you@example.com" required autocomplete="email" />
+        <span class="form-error" data-error-for="formEmail"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="formSubject">Subject</label>
+        <input type="text" id="formSubject" name="subject" placeholder="What's this about?" required minlength="3" maxlength="200" />
+        <span class="form-error" data-error-for="formSubject"></span>
+      </div>
+
+      <div class="form-group">
+        <label for="formMessage">Message</label>
+        <textarea id="formMessage" name="message" placeholder="Write your message here…" required minlength="10" maxlength="5000" rows="6"></textarea>
+        <span class="form-error" data-error-for="formMessage"></span>
+      </div>
+
+      <div class="form-group form-group--submit">
+        <button type="submit" class="btn" id="formSubmitBtn">
+          <span class="btn__label">Send Message</span>
+          <span class="btn__spinner" aria-hidden="true"></span>
+        </button>
+        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+      </div>
+    </form>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+       EDIT: Replace social media URLs and copyright
+       ============================================================ -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <p>&copy; 2026 Your Name. All rights reserved.</p>
+      <div class="footer__social">
+        <!-- EDIT: Replace href with your actual social media URLs -->
+        <a href="https://twitter.com/yourhandle" target="_blank" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+        <a href="https://instagram.com/yourhandle" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://dribbble.com/yourhandle" target="_blank" aria-label="Dribbble"><i class="fab fa-dribbble"></i></a>
+        <a href="https://behance.net/yourhandle" target="_blank" aria-label="Behance"><i class="fab fa-behance"></i></a>
+        <a href="https://linkedin.com/in/yourhandle" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/yourhandle" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================================
+       LIGHTBOX (enhanced: fullscreen, swipe, counter)
+       ============================================================ -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox__close" aria-label="Close">&times;</button>
+
+    <div class="lightbox__controls">
+      <button class="lightbox__fullscreen" aria-label="Toggle fullscreen">
+        <i class="fas fa-expand"></i>
+      </button>
+    </div>
+
+    <span class="lightbox__counter"></span>
+
+    <button class="lightbox__prev" aria-label="Previous">&#10094;</button>
+    <img class="lightbox__img" src="" alt="" />
+    <button class="lightbox__next" aria-label="Next">&#10095;</button>
+
+    <p class="lightbox__caption"></p>
+  </div>
+
+  <!-- Local JS -->
+  <script src="js/script.js"></script>
+</body>
+</html>   
